@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://frontdep-ib8l.vercel.app/,https://springreact-5sgt.onrender.com/")
+                .allowedOrigins("https://frontdep-52om.vercel.app/,https://springreact-5sgt.onrender.com/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
