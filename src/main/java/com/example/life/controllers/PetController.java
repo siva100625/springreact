@@ -16,30 +16,22 @@ public class PetController {
 
     @Autowired
     private PetService service;
-
-    // GET: List all pets
     @GetMapping
     public List<Pet> all() {
         return service.getAll();
     }
-
-    // POST: Add new pet
     @PostMapping
     public Pet save(@RequestBody Pet pet) {
         return service.save(pet);
     }
-
-    // PUT: Adopt a pet by ID
     @PutMapping("/{id}/adopt")
     public Pet adopt(@PathVariable Long id) {
         return service.adopt(id);
     }
-
     @PutMapping("/{id}")
     public Pet update(@PathVariable Long id, @RequestBody Pet pet) {
         return service.update(id, pet);
     }
-
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         service.delete(id);
