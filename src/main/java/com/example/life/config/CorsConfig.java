@@ -12,6 +12,5 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOrigins("https://frontdep-52om.vercel.app/,https://springreact-5sgt.onrender.com/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
-                .allowCredentials(true);
     }
 }
